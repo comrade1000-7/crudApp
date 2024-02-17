@@ -1,0 +1,10 @@
+services:
+  db_pg_geetest:
+    image: postgres:16.1
+    environment:
+      POSTGRES_DB: geetestDB
+      POSTGRES_USER: geetest_user
+      POSTGRES_PASSWORD: geetest_password
+    ports:
+      - '5433:5432'
+

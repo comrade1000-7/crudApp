@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/geetestDB
+    username: geetest_user
+    password: geetest_password
+  sql:
+    init:
+      mode: always
+  docker:
+    compose:
+      enabled: true
+      lifecycle-management: start_and_stop
+  jpa:
+    ##defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
